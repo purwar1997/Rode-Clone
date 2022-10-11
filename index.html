@@ -21,7 +21,7 @@
         theme: {
           screens: {
             sm: "640px",
-            md: "768px",
+            md: "760px",
             lg: "950px",
             xl: "1100px",
             "2xl": "1250px",
@@ -36,15 +36,16 @@
             },
 
             backgroundImage: {
-              hero: "url('https://edge.rode.com/images/page/1/modules/6612/RODEX_Prelaunch-Website-Banners_1920x700.gif')",
+              "hero-image":
+                "url('https://edge.rode.com/images/page/1/modules/6612/RODEX_Prelaunch-Website-Banners_1920x700.gif')",
 
-              "product-1":
+              "rodecaster-pro-II":
                 "url('https://edge.rode.com/images/page/1/modules/5813/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg')",
 
-              "product-2":
+              "NTH-100-headphone":
                 "url('https://edge.rode.com/images/page/1/modules/5873/rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb.jpg')",
 
-              "product-3":
+              "NT-USB-microphone":
                 "url('https://edge.rode.com/images/page/1/modules/5914/rode-nt-usb-webheader-v7-1920x700-rgb.jpg')",
 
               microphones:
@@ -82,11 +83,11 @@
     </section>
 
     <!-- Navbar -->
-    <nav class="border-b-[1px] border-gray-200 md:sticky top-0 bg-white z-10">
-      <div class="px-8 py-4 flex justify-between items-center xl:px-20">
+    <nav class="border-b-[1px] border-gray-200 sticky top-0 bg-white z-10">
+      <div class="px-8 py-2 flex justify-between items-center xl:px-20 xl:py-4">
         <!-- Hamburger Icon -->
         <div class="xl:hidden">
-          <i class="text-xl cursor-pointer fa-solid fa-bars"></i>
+          <i class="text-2xl cursor-pointer fa-solid fa-bars"></i>
         </div>
 
         <!-- Logo -->
@@ -110,7 +111,7 @@
 
     <!-- Hero section -->
     <header
-      class="bg-black xl:h-screen xl:bg-hero xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row xl:justify-end"
+      class="bg-black xl:h-screen xl:bg-hero-image xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row xl:justify-end"
     >
       <!-- Image -->
       <div class="xl:hidden">
@@ -132,7 +133,7 @@
     <section>
       <!-- RØDECaster Pro II -->
       <div
-        class="bg-black xl:h-screen xl:bg-product-1 xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center justify-center xl:flex-row xl:justify-end"
+        class="bg-black xl:h-screen xl:bg-rodecaster-pro-II xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center justify-center xl:flex-row xl:justify-end"
       >
         <!-- Product image -->
         <div class="xl:hidden">
@@ -171,7 +172,7 @@
 
       <!-- NTH-100 Headphone -->
       <div
-        class="xl:h-screen xl:bg-product-2 xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row-reverse xl:justify-end"
+        class="xl:h-screen xl:bg-NTH-100-headphone xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row-reverse xl:justify-end"
       >
         <!-- Product image -->
         <div class="xl:hidden">
@@ -210,7 +211,7 @@
 
       <!-- NT-USB Microphone -->
       <div
-        class="xl:h-screen xl:bg-product-3 xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row xl:justify-end"
+        class="xl:h-screen xl:bg-NT-USB-microphone xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row xl:justify-end"
       >
         <!-- Product image -->
         <div class="xl:hidden">
