@@ -66,30 +66,28 @@
     <title>RØDE Microphones</title>
   </head>
   <body>
-    <!-- Topmost section -->
-    <section class="border-b-[1px] border-gray-200">
-      <div
-        class="container mx-auto px-8 py-2 flex justify-between items-center"
-      >
-        <div class="flex items-center gap-2 cursor-pointer">
-          <i class="text-xl fa-solid fa-location-dot"></i>
+    <!-- Topbar -->
+    <section class="hidden xl:block border-b-[1px] border-gray-200">
+      <div class="px-20 py-1.5 flex justify-between items-center">
+        <div class="flex items-center gap-1.5 cursor-pointer">
+          <i class="text-lg fa-solid fa-location-dot"></i>
           <span>EN</span>
           <i
             class="relative bottom-0.5 text-sm fa-sharp fa-solid fa-sort-down"
           ></i>
         </div>
 
-        <a href=""><i class="text-xl fa-solid fa-user"></i></a>
+        <a href=""><i class="text-lg fa-solid fa-user"></i></a>
       </div>
     </section>
 
-    <!-- Navbar section -->
-    <nav class="border-b-[1px] border-gray-200 sticky top-0 bg-white z-10">
-      <div
-        class="container mx-auto px-8 py-5 flex justify-between items-center"
-      >
-        <!-- Hamburger Menu -->
-        <i class="hidden text-xl cursor-pointer fa-solid fa-bars"></i>
+    <!-- Navbar -->
+    <nav class="border-b-[1px] border-gray-200 md:sticky top-0 bg-white z-10">
+      <div class="px-8 py-4 flex justify-between items-center xl:px-20">
+        <!-- Hamburger Icon -->
+        <div class="xl:hidden">
+          <i class="text-xl cursor-pointer fa-solid fa-bars"></i>
+        </div>
 
         <!-- Logo -->
         <a href="">
@@ -97,7 +95,7 @@
         </a>
 
         <!-- Navigation links -->
-        <ul class="flex gap-10">
+        <ul class="hidden xl:flex gap-10">
           <li><a class="text-lg" href="">Products</a></li>
           <li><a class="text-lg" href="">User Guides</a></li>
           <li><a class="text-lg" href="">Solutions</a></li>
@@ -112,18 +110,18 @@
 
     <!-- Hero section -->
     <header
-      class="h-screen bg-hero bg-center bg-no-repeat bg-cover flex justify-end items-center p-20"
+      class="bg-black xl:h-screen xl:bg-hero xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row xl:justify-end"
     >
       <!-- Image -->
-      <div class="hidden">
-        <img src="" alt="" />
+      <div class="xl:hidden">
+        <img src="./images/hero.png" alt="hero-image" />
       </div>
 
       <!-- Content -->
-      <div class="w-[35rem]">
+      <div class="w-3/4 xl:w-[35rem] 2xl:w-[40rem] p-10 xl:p-20">
         <img src="./images/rode-x-text-03.svg" alt="" />
         <button
-          class="block mx-auto mt-8 bg-black px-6 py-2 rounded-full text-red text-lg font-semibold uppercase transition duration-200 hover:bg-lightBlack"
+          class="block mx-auto mt-8 bg-red px-6 py-2 rounded-full text-black text-lg font-semibold uppercase transition duration-200 xl:bg-black xl:text-red hover:bg-lightBlack"
         >
           Learn More
         </button>
@@ -134,20 +132,24 @@
     <section>
       <!-- RØDECaster Pro II -->
       <div
-        class="h-screen bg-product-1 bg-center bg-no-repeat bg-cover flex justify-end items-center p-28"
+        class="bg-black xl:h-screen xl:bg-product-1 xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center justify-center xl:flex-row xl:justify-end"
       >
         <!-- Product image -->
-        <div class="hidden"><img src="" alt="" /></div>
+        <div class="xl:hidden">
+          <img src="./images/rode-rodecaster-pro-II.png" alt="" />
+        </div>
 
         <!-- Content -->
-        <div class="w-[32rem] flex flex-col items-center gap-6">
+        <div
+          class="xl:w-[40rem] 2xl:w-[45rem] flex flex-col items-center gap-6 p-10 xl:p-28"
+        >
           <img src="./images/RODECasterProII_PL_PI_01.svg" alt="" />
 
           <h3 class="text-2xl text-white text-center">
             The Revolution Is Here
           </h3>
 
-          <p class="text-lg text-gray-400 text-center">
+          <p class="sm:text-lg text-gray-400 text-center">
             The RØDECaster Pro II is the world's most powerful all-in-one audio
             solution for streamers, podcasters, musicians, and creators. Take
             your content to the next level.
@@ -169,20 +171,24 @@
 
       <!-- NTH-100 Headphone -->
       <div
-        class="h-screen bg-product-2 bg-center bg-no-repeat bg-cover flex justify-start items-center p-28"
+        class="xl:h-screen xl:bg-product-2 xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row-reverse xl:justify-end"
       >
         <!-- Product image -->
-        <div class="hidden"><img src="" alt="" /></div>
+        <div class="xl:hidden">
+          <img src="./images/rode-nth100.png" alt="" />
+        </div>
 
         <!-- Content -->
-        <div class="w-[32rem] flex flex-col items-center gap-6">
+        <div
+          class="xl:w-[40rem] 2xl:w-[45rem] flex flex-col items-center gap-6 p-10 xl:p-28"
+        >
           <img src="./images/NTH-100_PL_P_RGB_01.svg" alt="" />
 
           <h3 class="text-2xl text-center">
             Your Search For The Perfect Headphones Is Over
           </h3>
 
-          <p class="text-lg text-gray-600 text-center">
+          <p class="sm:text-lg text-gray-600 text-center">
             Experience sound like never before with the NTH-100s. Exceptional
             sonic performance, superior comfort and iconic looks that inspires
             creativity.
@@ -204,20 +210,24 @@
 
       <!-- NT-USB Microphone -->
       <div
-        class="h-screen bg-product-3 bg-center bg-no-repeat bg-cover flex justify-end items-center p-28"
+        class="xl:h-screen xl:bg-product-3 xl:bg-center xl:bg-no-repeat xl:bg-cover flex flex-col items-center xl:flex-row xl:justify-end"
       >
         <!-- Product image -->
-        <div class="hidden"><img src="" alt="" /></div>
+        <div class="xl:hidden">
+          <img src="./images/rode-nt-usb.png" alt="" />
+        </div>
 
         <!-- Content -->
-        <div class="w-[32rem] flex flex-col items-center gap-6">
+        <div
+          class="xl:w-[40rem] 2xl:w-[45rem] flex flex-col items-center gap-6 p-10 xl:p-28"
+        >
           <img src="./images/NT-USB_PL_P_01.svg" alt="" />
 
           <h3 class="text-2xl text-center">
             Studio-Quality Recording, Made Simple
           </h3>
 
-          <p class="text-lg text-gray-500 text-center">
+          <p class="sm:text-lg text-gray-500 text-center">
             The NT-USB is a studio-quality USB condenser microphone that offers
             impeccable audio, elegant looks and premium features, all in an
             easy-to-use form factor, the NT-USB will have you sounding like a
@@ -241,8 +251,10 @@
 
     <!-- Explore section -->
     <section>
-      <div class="container mx-auto px-8 py-14">
-        <h2 class="text-4xl font-semibold text-gray-500 text-center">
+      <div class="container mx-auto py-14 lg:px-8">
+        <h2
+          class="text-3xl sm:text-4xl font-semibold text-gray-500 text-center lg:text-left"
+        >
           Explore the RØDE Range
         </h2>
 
@@ -250,36 +262,44 @@
         <div class="mt-12 space-y-10">
           <!-- Microphones -->
           <div
-            class="h-72 bg-microphones bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer"
+            class="h-48 lg:h-56 xl:h-64 2xl:h-72 bg-microphones bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer"
           >
-            <h1 class="text-7xl font-semibold text-white uppercase">
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-semibold text-white uppercase"
+            >
               Microphones
             </h1>
           </div>
 
           <!-- Interfaces and Mixers -->
           <div
-            class="h-72 bg-interfaces-mixers bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer"
+            class="h-48 lg:h-56 xl:h-64 2xl:h-72 bg-interfaces-mixers bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer"
           >
-            <h1 class="text-7xl font-semibold text-white uppercase">
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-semibold text-white uppercase"
+            >
               Interfaces & Mixers
             </h1>
           </div>
 
           <!-- Software -->
           <div
-            class="h-72 bg-software bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer"
+            class="h-48 lg:h-56 xl:h-64 2xl:h-72 bg-software bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer"
           >
-            <h1 class="text-7xl font-semibold text-white uppercase">
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-semibold text-white uppercase"
+            >
               Software
             </h1>
           </div>
 
           <!-- Accessories -->
           <div
-            class="h-72 bg-accessories bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer"
+            class="h-48 lg:h-56 xl:h-64 2xl:h-72 bg-accessories bg-center bg-no-repeat bg-cover flex justify-center items-center cursor-pointer"
           >
-            <h1 class="text-7xl font-semibold text-white uppercase">
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-semibold text-white uppercase"
+            >
               Accessories
             </h1>
           </div>
@@ -291,7 +311,7 @@
     <section>
       <div class="container mx-auto px-8 flex justify-center">
         <h2
-          class="text-4xl font-semibold text-brown cursor-pointer hover:opacity-80"
+          class="text-3xl sm:text-4xl font-semibold text-brown text-center lg:text-left cursor-pointer hover:opacity-80"
         >
           Latest From The RØDE Blog
         </h2>
@@ -299,21 +319,21 @@
 
       <!-- RØDE blogs -->
       <div class="bg-lightGray my-12 py-12">
-        <div class="container mx-auto px-8 grid grid-cols-2 gap-8">
+        <div class="container mx-auto px-8 grid lg:grid-cols-2 gap-8">
           <!-- Blog 1 -->
           <div class="bg-white">
             <div class="h-28 px-5 flex justify-center items-center">
-              <h3 class="text-2xl text-center">
+              <h3 class="text-xl sm:text-2xl text-center">
                 XLR vs USB Microphones: Which is Best for You?
               </h3>
             </div>
 
             <div>
-              <img src="./images/thumbnail2.jpg" alt="" />
+              <img class="w-full" src="./images/thumbnail2.jpg" alt="" />
             </div>
 
             <div class="h-56 p-8 flex flex-col justify-between items-center">
-              <p class="text-lg text-center">
+              <p class="sm:text-lg text-center">
                 We explore the differences between XLR and USB microphones, the
                 advantages of each and which type is best suited to your needs.
               </p>
@@ -328,18 +348,18 @@
           <!-- Blog 2 -->
           <div class="bg-white">
             <div class="h-28 px-5 flex justify-center items-center">
-              <h3 class="text-2xl text-center">
+              <h3 class="text-xl sm:text-2xl text-center">
                 The Difference Between Large-Diaphragm and Small-Diaphragm
                 Condenser Microphones
               </h3>
             </div>
 
             <div>
-              <img src="./images/thumbnail6.jpg" alt="" />
+              <img class="w-full" src="./images/thumbnail6.jpg" alt="" />
             </div>
 
             <div class="h-56 p-8 flex flex-col justify-between items-center">
-              <p class="text-lg text-center">
+              <p class="sm:text-lg text-center">
                 We explore the difference between large- and small-diaphragm
                 condenser microphones, and what each is best used for.
               </p>
@@ -354,17 +374,17 @@
           <!-- Blog 3 -->
           <div class="bg-white">
             <div class="h-28 px-5 flex justify-center items-center">
-              <h3 class="text-2xl text-center">
+              <h3 class="text-xl sm:text-2xl text-center">
                 What is a Condenser Microphone and When to Use One?
               </h3>
             </div>
 
             <div>
-              <img src="./images/thumbnail.jpg" alt="" />
+              <img class="w-full" src="./images/thumbnail.jpg" alt="" />
             </div>
 
             <div class="h-56 p-8 flex flex-col justify-between items-center">
-              <p class="text-lg text-center">
+              <p class="sm:text-lg text-center">
                 Learn more about the different types of condenser mics, how they
                 work and the best applications for using them.
               </p>
@@ -379,7 +399,7 @@
           <!-- Blog 4 -->
           <div class="bg-white">
             <div class="h-28 px-5 flex justify-center items-center">
-              <h3 class="text-2xl text-center">
+              <h3 class="text-xl sm:text-2xl text-center">
                 Firmware Version 1.0.7 for the RØDECaster Pro II is Available
                 Now
               </h3>
@@ -387,13 +407,14 @@
 
             <div>
               <img
+                class="w-full"
                 src="./images/rode-rodecaster-pro-II-on-black-front-580x509.jpg"
                 alt=""
               />
             </div>
 
             <div class="h-56 p-8 flex flex-col justify-between items-center">
-              <p class="text-lg text-center">
+              <p class="sm:text-lg text-center">
                 Firmware version 1.0.7 includes key feature additions, such as
                 custom routing for USB and Bluetooth outputs, and more.
               </p>
@@ -416,7 +437,7 @@
       <div class="container mx-auto px-8">
         <!-- Top section -->
         <div
-          class="py-16 border-b-[1px] border-gray-200 flex justify-between items-start"
+          class="py-16 border-b-[1px] border-gray-200 flex flex-col items-center gap-12 xl:flex-row xl:items-start xl:justify-between"
         >
           <!-- Logo -->
           <img
@@ -463,8 +484,8 @@
           </div>
 
           <!-- Sign up -->
-          <div class="w-64 flex flex-col items-end gap-4">
-            <h2 class="text-2xl font-semibold text-right">
+          <div class="xl:w-64 flex flex-col items-center xl:items-end gap-4">
+            <h2 class="text-2xl font-semibold text-center xl:text-right">
               Subscribe to our latest news and offers
             </h2>
             <button
@@ -476,8 +497,12 @@
         </div>
 
         <!-- Bottom section -->
-        <div class="py-10 flex justify-between items-center">
-          <p>&copy; 2022 RØDE All Rights Reserved.</p>
+        <div
+          class="py-10 flex flex-col items-center gap-5 xl:flex-row xl:justify-between"
+        >
+          <p class="order-1 xl:order-none">
+            &copy; 2022 RØDE All Rights Reserved.
+          </p>
 
           <div class="flex items-center gap-3">
             <a class="text-sm" href="">Privacy Policy</a>
@@ -486,7 +511,7 @@
           </div>
 
           <!-- Social links -->
-          <div class="space-x-6">
+          <div class="space-x-10 xl:space-x-6">
             <a href=""
               ><i
                 class="text-2xl text-brown transition duration-200 hover:scale-125 fa-brands fa-facebook"
