@@ -1,8 +1,8 @@
-# Rode Clone
+# Rode Website Clone
 
-![HTML](https://img.shields.io/badge/-HTML-red)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-blueviolet)
-![Responsive](https://img.shields.io/badge/-Responsive-brightgreen)
+![HTML5](https://img.shields.io/badge/-HTML5-red)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-blueviolet)
+![Responsive](https://img.shields.io/badge/-Responsive-limegreen)
 
 ## Description
 
@@ -23,7 +23,7 @@ This website is divided into following sections :-
 - RØDE Blog section
 - Footer
 
-### Preview of the project -
+### Preview of the project
 
 ![Preview](<./previews/Screenshot%20(90).png>)
 
