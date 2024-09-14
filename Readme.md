@@ -12,15 +12,15 @@ This project is a clone of Rode website. It is built using `HTML` and `Tailwind 
 
 This website is divided into following sections :-
 
-- Topbar
+- Top bar
 - Navigation bar
-- Message section
+- Hero section
 - Products section
   - RØDECaster Pro
   - NTH-100 Headphone
   - NT-USB Microphone
 - Explore section
-- RØDE Blog section
+- Blogs section
 - Footer
 
 ### Preview of the project
